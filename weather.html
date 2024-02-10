@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <p>Weather app</p>
+        <form action="/sumbit" class="search-form">
+            <input type="text" name="search" id="search">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+    <section class="mainbody">
+        <h2 class="Title">
+            Weather for
+        </h2>
+        <div class="Date"></div>
+        <div class="card-box">
+            <div class="card-1">
+                <div class="chead">
+                    Temperatures
+                </div>
+                <div class="cbody">
+                    <h2>
+                        <span class="TEMP">20</span>
+                        <span class="symb">&deg;C</span>
+                    </h2>
+                    <p class="temp">Temperature is 20</p>
+                    <p class="mintemp">Min Temperature is 20</p>
+                    <p class="maxtemp">Max Temperature is 20</p>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="chead">
+                    Humidity
+                </div>
+                <div class="cbody">
+                    <h2>
+                        <span class="Humidity">20</span>
+                        <span class="symb"> %</span>
+                    </h2>
+                    <p class="wind-deg">Wind degree 20</p>
+                    <p class="feels">Feels Like 20</p>
+                    <p class="humip">Humidity is 20</p>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="chead">
+                    Wind
+                </div>
+                <div class="cbody">
+                    <h2>
+                        <span class="Wind">20</span>
+                        <span class="symb"> km/hr</span>
+                    </h2>
+                    <p class="Windp">Wind speed is 0</p>
+                    <p class="sunrise">Sunrise Time is </p>
+                    <p class="cloud">Cloud pct is</p>
+                </div>
+            </div>
+        </div>
+        <!-- <p class="head-2">
+            Weather of other common places
+        </p> -->
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>
